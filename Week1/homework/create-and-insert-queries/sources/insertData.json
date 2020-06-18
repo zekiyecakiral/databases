@@ -1,0 +1,83 @@
+ {"invitee" : [
+    {
+      "invitee_no": 1,
+      "invitee_name": "Zekiye C.",
+      "invited_by" : "Zeynep U."
+    },
+    {
+      "invitee_no": 2,
+      "invitee_name": "Ahmet T.",
+      "invited_by": "Mehmet K."
+    },
+    {
+      "invitee_no": 3,
+      "invitee_name": "Ali S.",
+      "invited_by": "Veli A."
+    },
+    {
+      "invitee_no": 4,
+      "invitee_name": "Deniz D.",
+      "invited_by": "Derya A."
+    },
+    {
+      "invitee_no": 5,
+      "invitee_name": "Asya B.",
+      "invited_by": "Azra Z."
+    }
+ ]
+,
+
+    "room":[
+        {  "room_no" :1,
+            "room_name":"Room A" ,
+            "floor_number":0
+        },
+        {  "room_no" :2,
+            "room_name":"Room B" ,
+            "floor_number":1
+        },
+        {  "room_no" :3,
+            "room_name":"Room C" ,
+            "floor_number":2
+        }
+    ]
+    ,
+    "meeting":[{ 
+        "meeting_no": 0,
+        "meeting_title" : "Increasing sales",
+        "starting_time":  "2020-06-25 09:30",
+        "ending_time": "2020-06-25 12:00" ,
+        "room_no" :5
+    },
+    { 
+        "meeting_no": 1,
+        "meeting_title" : "Customer Support",
+        "starting_time":  "2020-06-26 02:30",
+        "ending_time": "2020-06-26 14:00" ,
+        "room_no" :5
+    },
+    { 
+        "meeting_no": 2,
+        "meeting_title" : "Fulfilment",
+        "starting_time":  "2020-06-27 09:30",
+        "ending_time": "2020-06-27 12:00" ,
+        "room_no" :5
+    },
+    { 
+        "meeting_no": 3,
+        "meeting_title" : "Returned products",
+        "starting_time":  "2020-06-28 13:30",
+        "ending_time": "2020-06-28 15:00" ,
+        "room_no" :5
+    },
+    { 
+        "meeting_no": 4,
+        "meeting_title" : "Opened Products",
+        "starting_time":  "2020-06-29 09:30",
+        "ending_time": "2020-06-29 12:00" ,
+        "room_no" :5
+    }
+     
+    ]
+}
+
