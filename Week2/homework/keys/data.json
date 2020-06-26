@@ -1,0 +1,66 @@
+{  
+    "authors":[
+        {"author_name":"Zekiye","university":"Abant Izzet Baysal University","date_of_birth":"1991-01-05","h_index":14,"gender":"F","collaborator":null},
+{"author_name":"Burak","university":"Uludag University","date_of_birth":"1991-07-10","h_index":7,"gender":"M","collaborator":1},
+{"author_name":"Beyza","university":"Mersin University","date_of_birth":"1989-07-10","h_index":23,"gender":"F","collaborator":2},
+{"author_name":"Zeynep","university":"Ankara University","date_of_birth":"1988-03-03","h_index":3,"gender":"F","collaborator":3},
+{"author_name":"Ali","university":"Trabzon University","date_of_birth":"1978-06-07","h_index":44,"gender":"M","collaborator":null},
+{"author_name":"Fatma","university":"Istanbul","date_of_birth":"1970-04-04","h_index":24,"gender":"F","collaborator":null},
+{"author_name":"Kaan","university":"Gazi","date_of_birth":"1989-09-09","h_index":4,"gender":"M","collaborator":4},
+{"author_name":"Hakan","university":"Izmir","date_of_birth":"1993-03-04","h_index":14,"gender":"M","collaborator":2},
+{"author_name":"Ekrem","university":"Izmir","date_of_birth":"1995-04-04","h_index":33,"gender":"M","collaborator":3},
+{"author_name":"Kubra","university":"Gazi","date_of_birth":"1995-09-09","h_index":34,"gender":"F","collaborator":1},
+{"author_name":"Ayse","university":"Aydin","date_of_birth":"1993-09-02","h_index":25,"gender":"F","collaborator":1},
+{"author_name":"Lisa","university":"London","date_of_birth":"1978-09-02","h_index":17,"gender":"F","collaborator":3},
+{"author_name":"Irine","university":"London","date_of_birth":"1988-07-05","h_index":16,"gender":"F","collaborator":3},
+{"author_name":"Deniz","university":"Sakarya","date_of_birth":"1989-01-02","h_index":45,"gender":"F","collaborator":2},
+{"author_name":"Derya","university":"Uludag","date_of_birth":"1992-03-04","h_index":67,"gender":"F","collaborator":2}
+    ],
+    "researchPapers" : [
+        {"paper_title":"The Social Animal","conference":"Amsterdam","publish_date":"2020-06-03"},
+        {"paper_title":"Influence: Science and Practice","conference":"Rotterdam","publish_date":"2020-07-03"},
+        {"paper_title":"Thinking, Fast and Slow","conference":"Tilburg","publish_date":"2020-07-07"},
+        {"paper_title":"How to Change Things When Change is Hard","conference":"Den Bosch","publish_date":"2020-08-04"},
+        {"paper_title":"The Art of Choosing","conference":"Sheena Iyengar","publish_date":"2020-06-07"},
+        {"paper_title":"Priceless: The Myth of Fair Value","conference":"Istanbul","publish_date":"2020-06-03"},
+        {"paper_title":"Stumbling on Happiness","conference":"Bursa","publish_date":"2020-07-03"},
+        {"paper_title":"The Surprising Truth About What Motivates Us","conference":"Ankara","publish_date":"2020-09-13"},
+        {"paper_title":"Predictably Irrational","conference":"Ankara","publish_date":"2020-07-09"},
+        {"paper_title":"Why Some Ideas Survive and Others Die","conference":"Istanbul","publish_date":"2020-09-06"},
+        {"paper_title":"The Power of Habit","conference":"Amsterdam","publish_date":"2020-06-27"},
+        {"paper_title":"100 Ways to Persuade and Convince","conference":"London","publish_date":"2020-06-01"},
+        {"paper_title":"Understanding the Buy Buttons","conference":"New York","publish_date":"2020-06-02"},
+        {"paper_title":"The Branded Mind","conference":"Elliot Aronson","publish_date":"2020-03-03"},
+        {"paper_title":"Why More is Less","conference":"Mersin","publish_date":"2020-04-03"},
+        {"paper_title":"Tricks Companies Use to Manipulate Our Minds","conference":"Utrecht","publish_date":"2020-03-03"},
+        {"paper_title":"The Compass of Pleasure","conference":"Amsterdam","publish_date":"2020-06-06"},
+        {"paper_title":"The Buying Brain","conference":"Rotterdam","publish_date":"2020-06-03"},
+        {"paper_title":"What Our Words Say About Us","conference":"Berlin","publish_date":"2020-06-09"},
+        {"paper_title":"Mistakes Were Made (But Not By Me)","conference":"Berlin","publish_date":"2020-09-03"},
+        {"paper_title":"The Art of Human Hacking","conference":"Berlin","publish_date":"2020-09-13"},
+        {"paper_title":"Understanding How Good People Turn Evil","conference":"Düsseldorf","publish_date":"2020-09-23"},
+        {"paper_title":"Obedience to Authority","conference":"Düsseldorf","publish_date":"2020-09-15"},
+        {"paper_title":"The Optimism Bias","conference":"Koln","publish_date":"2020-10-11"},
+        {"paper_title":"Mindfulness","conference":"Amsterdam","publish_date":"2020-10-13"},
+        {"paper_title":"The Irresistible Pull of Irrational Behavior","conference":"Tilburg","publish_date":"2020-01-03"},
+        {"paper_title":"Redirect","conference":"Tilburg","publish_date":"2020-06-03"},
+        {"paper_title":"12 Principles for Surviving and Thriving","conference":"Den Bosch","publish_date":"2020-01-07"},
+        {"paper_title":"You Are Not So Smart","conference":"Istanbul","publish_date":"2020-06-27"},
+        {"paper_title":"The Secret Lives of the Brain","conference":"Izmir","publish_date":"2020-06-21"}
+    ],
+    "authorsResearchs" :[
+        {"author_id":1,"paper_id":1},
+        {"author_id":1,"paper_id":2},
+        {"author_id":2,"paper_id":1},
+        {"author_id":3,"paper_id":3},
+        {"author_id":4,"paper_id":4},
+        {"author_id":4,"paper_id":2},
+        {"author_id":5,"paper_id":1},
+        {"author_id":5,"paper_id":5},
+        {"author_id":6,"paper_id":1},
+        {"author_id":6,"paper_id":3}
+    ]
+}
+
+
+
