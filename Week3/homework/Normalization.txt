@@ -1,0 +1,94 @@
+
+1.How can you convert the table into 1NF ?
+ According to we have learned in week3 in readme.txt 1st normal form has 4 rules. 
+in the following table do not fulfill the condition 1.rules.
+(Rule 1 : Single valued attributes (each column should have atomic value, no multiple values)
+
+
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+-----------+------------------+
+| member_id | member_name   | member_address | dinner_id | dinner_date | venue_code | venue_description | food_code | food_description |
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+-----------+------------------+
+|         1 | Amit          | 325 Max park   | D00001001 | 2020-03-15  | B01        | Grand Ball Room   | C1        | Curry            |
+|         1 | Amit          | 325 Max park   | D00001001 | 2020-03-15  | B01        | Grand Ball Room   | C2        | Cake             |
+|         2 | Ben           | 24 Hudson lane | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | S1        | Soup             |
+|         2 | Ben           | 24 Hudson lane | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | C2        | Cake             |
+|         3 | Cristina      | 516 6th Ave    | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | S1        | Soup               |
+|         3 | Cristina      | 516 6th Ave    | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | C2        | Cake             |
+|         4 | Dan           | 89 John St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | P1        | Mousse           |
+|         4 | Dan           | 89 John St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | T1        | Tea              |
+|         4 | Dan           | 89 John St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | M1        | Mousse           |
+|         5 | Ema           | 91 Pixar St    | D00001003 | 2020-03-20  | B03        | Goat Farm         | P1        | Pie              |
+|         5 | Ema           | 91 Pixar St    | D00001003 | 2020-03-20  | B03        | Goat Farm         | T1        | Tea              |
+|         5 | Ema           | 91 Pixar St    | D00001003 | 2020-03-20  | B03        | Goat Farm         | M1        | Mousse           |
+|         6 | Fatima        | 56 8th Ave     | D00001004 | 2020-03-20  | B04        | Mama's Kitchen    | F1        | Falafal          |
+|         6 | Fatima        | 56 8th Ave     | D00001004 | 2020-03-20  | B04        | Mama's Kitchen    | M1        | Mousse           |
+|         7 | Gabor         | 54 Vivaldi St  | D00001005 | 2020-02-20  | B05        | Hungry Hungary    | G1        | Goulash          |
+|         7 | Gabor         | 54 Vivaldi St  | D00001005 | 2020-02-20  | B05        | Hungry Hungary    | P2        | Pasca            |
+|         8 | Hema          | 9 Peter St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | P1        | Pie              |
+|         8 | Hema          | 9 Peter St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | T1        | Tea              |
+|         8 | Hema          | 9 Peter St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | M1        | Mousse           |
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+-----------+------------------+
+
+
+2.What are the super, candidate, primary keys in the table created in step (1)?
+- Super key is a set of columns that uniquely identify a row.
+   SK : member_id, member_name, member_address, dinner_id, food_code, venue code
+- Candidate key is a minimal super key that can uniquely identify a row.
+  CK : member_id, dinner_id, food_code
+-Primary key is a choice of candidate key chosen by the database designer.
+  PK: member_id, food_code
+
+3.How can you develop the set of 2NF tables? (Think of relationships between different tables).
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+
+| member_id | member_name   | member_address | dinner_id | dinner_date | venue_code | venue_description | 
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+
+|         1 | Amit          | 325 Max park   | D00001001 | 2020-03-15  | B01        | Grand Ball Room   | 
+|         2 | Ben           | 24 Hudson lane | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | 
+|         3 | Cristina      | 516 6th Ave    | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | 
+|         4 | Dan           | 89 John St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
+|         5 | Ema           | 91 Pixar St    | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
+|         6 | Fatima        | 56 8th Ave     | D00001004 | 2020-03-20  | B04        | Mama's Kitchen    | 
+|         7 | Gabor         | 54 Vivaldi St  | D00001005 | 2020-02-20  | B05        | Hungry Hungary    | 
+|         8 | Hema          | 9 Peter St     | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
++-----------+---------------+----------------+-----------+-------------+------------+-------------------+
++-----------+------------------+
+| food_code | food_description |
++-----------+------------------+
+| C1       | Curry             |
+| C2        | Cake             |
+| F1        | Falafal          |
+| G1        | Goulash          |
+| S1        | Soup             |
+| M1        | Mousse           |
+| P1        | Pie              |
+| P2        | Pasca            |
+| T1        | Tea              |
++-----------+------------------+
+
+4.How can you develop the set of 3NF tables?
+
++-----------+---------------+----------------+    +-----------+-------------+------------+-------------------+
+| member_id | member_name   | member_address |    | dinner_id | dinner_date | venue_code | venue_description | 
++-----------+---------------+----------------+    +-----------+-------------+------------+-------------------+
+|         1 | Amit          | 325 Max park   |    | D00001001 | 2020-03-15  | B01        | Grand Ball Room   | 
+|         2 | Ben           | 24 Hudson lane |    | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | 
+|         3 | Cristina      | 516 6th Ave    |    | D00001002 | 2020-03-15  | B02        | Zoku Roof Top     | 
+|         4 | Dan           | 89 John St     |    | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
+|         5 | Ema           | 91 Pixar St    |    | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
+|         6 | Fatima        | 56 8th Ave     |    | D00001004 | 2020-03-20  | B04        | Mama's Kitchen    | 
+|         7 | Gabor         | 54 Vivaldi St  |    | D00001005 | 2020-02-20  | B05        | Hungry Hungary    | 
+|         8 | Hema          | 9 Peter St     |    | D00001003 | 2020-03-20  | B03        | Goat Farm         | 
++-----------+---------------+----------------+    +-----------+-------------+------------+-------------------+
++-----------+------------------+
+| food_code | food_description |
++-----------+------------------+
+| C1       | Curry             |
+| C2        | Cake             |
+| F1        | Falafal          |
+| G1        | Goulash          |
+| S1        | Soup             |
+| M1        | Mousse           |
+| P1        | Pie              |
+| P2        | Pasca            |
+| T1        | Tea              |
++-----------+------------------+
