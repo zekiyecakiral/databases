@@ -20,7 +20,7 @@ function getPopulation(Country, name, code, cb) {
   );
 }
 
-getPopulation("Country", "Aruba", "'ABW'", (error,result) => {
+getPopulation("Country", "'OR 1 = 1;  -- ", "", (error,result) => {
   if(error) throw error;
     console.log(result);
   });
